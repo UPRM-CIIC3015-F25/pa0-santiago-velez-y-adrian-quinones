@@ -94,7 +94,7 @@ start = False  # Indicates if the game has started
 # Main game loop
 while True:
     # Event handling
-    # DONE Task 4: Add your name (Santiago Vélez Cruz and Adrián E. Quiñones Pérez)
+    # DONE Task 4: Add your name (Santiago Vélez Cruz and Adrián E. Quiñones Pérez) (Seen in screenshots)
     name = "John Doe"
     for event in pygame.event.get():
         if event.type == pygame.QUIT:  # Quit the game
