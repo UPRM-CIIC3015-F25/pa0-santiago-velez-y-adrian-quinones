@@ -81,7 +81,7 @@ player_width = 200 # Changed "player_width = 100" to "player_width = 200" (Adri�
 player = pygame.Rect(screen_width/2 - 45, screen_height - 20, player_width, player_height)  # Player paddle
 
 # Game Variables
-ball_speed_x = 0
+ball_speed_x = -2 # Task 5, Part 1: Teammate A changed "ball_speed_x = 0" to "ball_speed_x = 2" (Adrián E. Quiñones Pérez)
 ball_speed_y = 0
 player_speed = 0
 
