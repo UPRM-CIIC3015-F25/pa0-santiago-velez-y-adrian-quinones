@@ -12,7 +12,7 @@ def ball_movement(ball_speed=None, hit_sound=None):
 
     # Start the ball movement when the game begins
     # TODO Task 5 Create a Merge Conflict
-    speed = 5
+    speed = 7
     if start:
         ball_speed_x = speed * random.choice((1, -1))  # Randomize initial horizontal direction
         ball_speed_y = speed * random.choice((1, -1))  # Randomize initial vertical direction
@@ -79,7 +79,7 @@ bg_color = pygame.Color('grey12')
 ball = pygame.Rect(screen_width / 2 - 15, screen_height / 2 - 15, 30, 30)  # Ball (centered)
 # DONE Task 1 Make the paddle bigger (Teammate A: Adrián E. Quiñones Pérez)
 player_height = 15
-player_width = 200 # Changed "player_width = 100" to "player_width = 200" (Adrián E. Quiñones Pérez)
+player_width = 200 # Changed "player_width = 100" to "player_width = 200" (Teammate A: Adrián E. Quiñones Pérez)
 player = pygame.Rect(screen_width/2 - 45, screen_height - 20, player_width, player_height)  # Player paddle
 
 # Game Variables
@@ -123,9 +123,9 @@ while True:
     light_grey = pygame.Color('grey83')
     red = pygame.Color('red')
     screen.fill(bg_color)  # Clear screen with background color
-    colegio_green = pygame.Color('green3') # Added this line of code (Adrián E. Quiñones Pérez)
+    colegio_green = pygame.Color('green3') # Added this line of code (Teammate A: Adrián E. Quiñones Pérez)
     pygame.draw.rect(screen, light_grey, player)  # Draw player paddle
-    # DONE Task 3: Change the Ball Color (Adrián E. Quiñones Pérez)
+    # DONE Task 3: Change the Ball Color (Teammate A: Adrián E. Quiñones Pérez)
     pygame.draw.ellipse(screen, colegio_green, ball)  # Draw ball
     player_text = basic_font.render(f'{score}', False, light_grey)  # Render player score
     screen.blit(player_text, (screen_width/2 - 15, 10))  # Display score on screen
