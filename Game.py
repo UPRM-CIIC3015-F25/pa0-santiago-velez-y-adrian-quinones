@@ -24,7 +24,7 @@ def ball_movement(ball_speed=None, hit_sound=None):
             # Done Task 2: Fix score to increase by 1 (Santiago Velez Cruz)
             score += 1  # Increase player score
             ball_speed_y *= -1  # Reverse ball's vertical direction
-            # TODO Task 6: Add sound effects HERE
+            # Done Task 6: Add sound effects HERE (Santiago Velez Cruz)
             hit_sound = pygame.mixer.Sound('player.wav')
             hit_sound.play()
 
